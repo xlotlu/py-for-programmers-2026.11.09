@@ -12,6 +12,12 @@ Python is dynamically typed
 (putem re-asigna variabile la alte data-type-uri)
 
 
+iteratorii: sunt iterabili
+            nu au nevoie să fie memory-backed
+            sunt suspendați în execuție
+            iterația îi deblochează
+            și suportă funcția next()
+
 
 
 # things to read
@@ -34,6 +40,13 @@ and
 or
 not
 
+in
+not in
+
+is
+is not
+
+
 # basic data types
 
 int
@@ -53,6 +66,8 @@ str, tuple, list:
 - sunt accesibile după index
 - au o lungime dată
   (accesibilă cu funcția `len()`)
+- suportă operatorul `in`
+- au metodele `.count()` și `.index()`
 
 
 
@@ -68,6 +83,7 @@ ValueError      apare când valoarea trimisă unei funcții
                 este invalidă. (context-dependent)
 AttributeError
 
+
 # working with VSCode:
 
 Ctrl+F5     run file in Python
@@ -76,3 +92,10 @@ Ctrl+/      comment selection (or current line)
 Tab         indent selection
 Shift+Tab   unindent selection
 
+
+# varia
+
+There are 2 most difficult problems in computing:
+- naming things
+- cache invalidation
+- off-by-one errors
