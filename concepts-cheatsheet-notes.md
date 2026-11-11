@@ -3,7 +3,7 @@ TODO.
 # concepts
 
 în Python totul(!) este un obiect
-in Python everything(!) este o referință
+in Python totul(!) este o referință
 
 
 reprezentare: TODO
@@ -18,7 +18,7 @@ iteratorii: sunt iterabili
             iterația îi deblochează
             și suportă funcția next()
 
-
+Python is "self-documenting"
 
 # things to read
 
@@ -82,6 +82,29 @@ type()
 ValueError      apare când valoarea trimisă unei funcții
                 este invalidă. (context-dependent)
 AttributeError
+
+IndexError      indexul respectiv nu există
+
+# useful and very useful packages
+
+pachetele se instalează cu comanda de shell de sistem:
+
+(adică în cmd sau powershell)
+
+```
+pip install package_name
+```
+
+* `ipython`: shell superb de python, cu comenzi interne specializate
+  și syntax highlighting și auto-completion
+* `rich`: aduce multe modalități de formatare și syntax highlighting
+  al codului, structurilor de date și excepțiilor. poate fi integrat
+  ușor cu (i)python:
+  
+  ```python
+  from rich import pretty
+  pretty.install()
+  ```
 
 
 # working with VSCode:
