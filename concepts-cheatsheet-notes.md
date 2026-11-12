@@ -20,6 +20,7 @@ iteratorii: sunt iterabili
 
 Python is "self-documenting"
 
+
 # things to read
 
 (at least once in a Python programmer's lifetime)
@@ -70,12 +71,12 @@ str, tuple, list:
 - au metodele `.count()` și `.index()`
 
 
-
 # debugging essentials
 
 print()
 help()
-type()
+type() # returnează clasa din care a fost instanțiat obiectul
+
 
 # important exceptions:
 
@@ -84,6 +85,7 @@ ValueError      apare când valoarea trimisă unei funcții
 AttributeError
 
 IndexError      indexul respectiv nu există
+
 
 # useful and very useful packages
 
@@ -103,8 +105,19 @@ pip install package_name
   
   ```python
   from rich import pretty
-  pretty.install()
+  pretty.install() # makes object representations pretty
+  # override the default print:
+  from rich import print
   ```
+
+## for accelerating code:
+
+* numba: first line of defense
+* cython: if you want compiled C modules
+
+## for data modelling, processing and(!) validation
+
+* pydantic
 
 
 # working with VSCode:
