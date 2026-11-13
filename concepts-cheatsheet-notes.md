@@ -1,16 +1,13 @@
-TODO.
-
 # concepts
 
 în Python totul(!) este un obiect
 in Python totul(!) este o referință
 
-
-reprezentare: TODO
+reprezentare: felul în care obiectul este afișat
+              în context de development
 
 Python is dynamically typed
-(putem re-asigna variabile la alte data-type-uri)
-
+(putem re-asigna variabila la alte data-type-uri)
 
 iteratorii: sunt iterabili
             nu au nevoie să fie memory-backed
@@ -27,6 +24,10 @@ Python is "self-documenting"
 
 The Styleguide:
 https://peps.python.org/pep-0008/
+
+```python
+import this
+```
 
 
 # operators
@@ -80,11 +81,14 @@ type() # returnează clasa din care a fost instanțiat obiectul
 
 # important exceptions:
 
+NameError       simbolul respectiv (variabila) nu este definit(ă)
 ValueError      apare când valoarea trimisă unei funcții
                 este invalidă. (context-dependent)
-AttributeError
-
+TypeError       call invalid de funcții și
+                operațiuni cu tipuri incompatibile
+AttributeError  atributul respectiv nu există
 IndexError      indexul respectiv nu există
+KeyError        cheia respectivă nu există
 
 
 # useful and very useful packages
@@ -93,7 +97,7 @@ pachetele se instalează cu comanda de shell de sistem:
 
 (adică în cmd sau powershell)
 
-```
+```shell
 pip install package_name
 ```
 
@@ -115,9 +119,16 @@ pip install package_name
 * numba: first line of defense
 * cython: if you want compiled C modules
 
-## for data modelling, processing and(!) validation
+## for real-world scenarios:
 
-* pydantic
+* requests: de-facto standard for http work
+* flask: web micro-framwork
+* django: monolithic, full-featured web framework
+  that does excellent data modelling
+* pydantic: framework for data modelling, processing
+  and(!) validation
+* fastapi: framework for creating REST APIs,
+  based on pydantic
 
 
 # working with VSCode:
